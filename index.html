@@ -4,18 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="reset.css">
     <style>
-        body {
-            margin: 0;
-        }
-
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
         .item {
             float: left;
             position: relative;
@@ -44,19 +34,19 @@
             text-decoration: none;
             background-color: orange;
             color: black;
-            /* padding: 5px 20px; */
         }
 
         .sab-link:hover {
             background-color: blue;
         }
-        
+
         .sab-list {
             position: absolute;
             left: 0;
             top: 100%;
             display: none;
         }
+
         .item:hover .sab-list {
             display: block;
         }
@@ -67,46 +57,49 @@
             background-color: chartreuse;
             color: black;
             padding: 5px 10px;
-            /* position: absolute; */
         }
+
         .sab-item1 {
             position: relative;
         }
+
         .sab-list1 {
             position: absolute;
             left: 82.68px;
             top: 0;
             display: none;
         }
+
         .sab-item1:hover .sab-list1 {
             display: block;
         }
+
         .sab-item2:hover .sab-list1 {
             display: none;
         }
+
         .sab-link11 {
             display: block;
             text-decoration: none;
             background-color: chartreuse;
             color: black;
             padding: 5px 10px;
-            /* position: absolute; */
         }
+
         .sab-item11 {
             position: relative;
         }
+
         .sab-list11 {
             position: absolute;
             left: 82.68px;
-            top: 0;
+            top: 18.13px;
             display: none;
         }
+
         .sab-item2:hover .sab-list11 {
             display: block;
         }
-        /* li > a:after { content:  ' +'; }
-		li > a:only-child:after { content: ''; } */
-
     </style>
 
 </head>
@@ -117,17 +110,25 @@
             <li class="item"><a href="" class="link">HOME</a></li>
             <li class="item"><a href="" class="link">PRODUCTS</a>
                 <ul class="sab-list">
-                    <li class="sab-item1"><a href="" class="sab-link">PRODUCT1
-                            <ul class="sab-list1">
-                                <li class="sab-item1"><a href="#"class="sab-link1">SUB ITEM1</a></li>
-                                <li class="sab-item1"><a href="#"class="sab-link1">SUB ITEM2</a></li>
-                            </ul>
+                    <li class="sab-item1"><a href="" class="sab-link">PRODUCT1</a>
+                        <ul class="sab-list1">
+                            <li class="sab-item1">
+                                <a href="#" class="sab-link1">SUB ITEM1</a>
+                            </li>
+                            <li class="sab-item1">
+                                <a href="#" class="sab-link1">SUB ITEM2</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="sab-item2"><a href="" class="sab-link">PRODUCT2
-                            <ul class="sab-list11">
-                                <li class="sab-item11"><a href="#"class="sab-link11">SUB ITEM3</a></li>
-                                <li class="sab-item11"><a href="#"class="sab-link11">SUB ITEM4</a></li>
-                            </ul>
+                    <li class="sab-item2"><a href="" class="sab-link">PRODUCT2</a>
+                        <ul class="sab-list11">
+                            <li class="sab-item11">
+                                <a href="#" class="sab-link11">SUB ITEM3</a>
+                            </li>
+                            <li class="sab-item11">
+                                <a href="#" class="sab-link11">SUB ITEM4</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </li>
