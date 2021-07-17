@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .item {
+            float: left;
+            position: relative;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .link {
+            display: block;
+            background-color: gray;
+            color: black;
+            text-decoration: none;
+            padding: 20px 30px;
+        }
+
+        .item:hover .link {
+            background-color: yellow;
+        }
+
+        .sab-link {
+            display: block;
+            text-decoration: none;
+            background-color: orange;
+            color: black;
+            /* padding: 5px 20px; */
+        }
+
+        .sab-link:hover {
+            background-color: blue;
+        }
+        
+        .sab-list {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            display: none;
+        }
+        .item:hover .sab-list {
+            display: block;
+        }
+
+        .sab-link1 {
+            display: block;
+            text-decoration: none;
+            background-color: chartreuse;
+            color: black;
+            padding: 5px 10px;
+            /* position: absolute; */
+        }
+        .sab-item1 {
+            position: relative;
+        }
+        .sab-list1 {
+            position: absolute;
+            left: 82.68px;
+            top: 0;
+            display: none;
+        }
+        .sab-item1:hover .sab-list1 {
+            display: block;
+        }
+        .sab-item2:hover .sab-list1 {
+            display: none;
+        }
+        .sab-link11 {
+            display: block;
+            text-decoration: none;
+            background-color: chartreuse;
+            color: black;
+            padding: 5px 10px;
+            /* position: absolute; */
+        }
+        .sab-item11 {
+            position: relative;
+        }
+        .sab-list11 {
+            position: absolute;
+            left: 82.68px;
+            top: 0;
+            display: none;
+        }
+        .sab-item2:hover .sab-list11 {
+            display: block;
+        }
+        /* li > a:after { content:  ' +'; }
+		li > a:only-child:after { content: ''; } */
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="list clearfix">
+            <li class="item"><a href="" class="link">HOME</a></li>
+            <li class="item"><a href="" class="link">PRODUCTS</a>
+                <ul class="sab-list">
+                    <li class="sab-item1"><a href="" class="sab-link">PRODUCT1
+                            <ul class="sab-list1">
+                                <li class="sab-item1"><a href="#"class="sab-link1">SUB ITEM1</a></li>
+                                <li class="sab-item1"><a href="#"class="sab-link1">SUB ITEM2</a></li>
+                            </ul>
+                    </li>
+                    <li class="sab-item2"><a href="" class="sab-link">PRODUCT2
+                            <ul class="sab-list11">
+                                <li class="sab-item11"><a href="#"class="sab-link11">SUB ITEM3</a></li>
+                                <li class="sab-item11"><a href="#"class="sab-link11">SUB ITEM4</a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="item"><a href="" class="link">ABOUT</a></li>
+            <li class="item"><a href="" class="link">CONTACT</a></li>
+        </ul>
+    </nav>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, repudiandae aut. Ad, totam in non magnam
+        expedita corporis cupiditate doloremque! Rem molestias modi minus vero eos, optio repellendus at eius ullam
+        adipisci rerum placeat ipsum magnam? Neque reprehenderit temporibus, corrupti fuga in ex eius sit veniam et
+        mollitia aliquam alias, ea id nisi, ipsum non modi aut. Temporibus, quae illum perferendis obcaecati aliquam,
+        earum ipsum est ipsam maxime eum asperiores quod doloremque unde numquam laudantium provident neque facilis
+        possimus. Repudiandae hic dicta perferendis libero quo pariatur recusandae voluptatum sit deserunt quis!
+        Reprehenderit inventore nam aperiam, expedita numquam similique itaque at ullam assumenda, dolorem nobis
+        voluptatem. At labore quos maiores non. Sunt mollitia quis quam dicta odio repellendus neque ducimus temporibus
+        eveniet minus enim repellat, laboriosam tenetur atque commodi quia totam explicabo nobis. Labore magnam,
+        doloribus cum nulla sed architecto non dolor? Quo itaque culpa, assumenda dolores vero quibusdam obcaecati
+        voluptatem placeat excepturi nobis corporis nihil aut dolorem voluptate inventore cumque accusantium aliquid
+        atque magni repellendus? Sit, alias aliquid aut sint, reprehenderit at cumque, quas dignissimos possimus ipsa in
+        ad. Esse non nisi at ratione, quaerat sapiente voluptate? Aliquam sapiente id beatae recusandae laborum quam
+        soluta dolorum commodi ea magnam eum nostrum ipsam, dignissimos adipisci deleniti tempore illo odio, mollitia
+        nihil voluptatibus doloribus minima similique. Sed, omnis eius! Incidunt ullam officia voluptate qui
+        necessitatibus, vel dicta tempore ducimus dolorum neque et in eveniet dolor sint voluptatem exercitationem
+        asperiores sit consequatur facere maiores. Numquam commodi sint ex quod voluptas quibusdam, blanditiis
+        exercitationem at aliquam optio sed non architecto quam corrupti voluptates? Molestias quod unde nam voluptatem,
+        debitis, delectus autem asperiores ipsa aliquam natus dolor tempore itaque perferendis cumque, nihil accusamus
+        commodi aliquid libero reiciendis obcaecati similique eius. Nobis amet illo totam ipsa quaerat reprehenderit
+        dolorem maxime pariatur alias animi, soluta nulla possimus.</p>
+</body>
+
+</html>
