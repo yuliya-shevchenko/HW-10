@@ -36,10 +36,6 @@
             color: black;
         }
 
-        .sab-link:hover {
-            background-color: blue;
-        }
-
         .sab-list {
             position: absolute;
             left: 0;
@@ -50,7 +46,7 @@
         .item:hover .sab-list {
             display: block;
         }
-        
+
         .sab-link1:hover {
             background-color: blueviolet;
         }
@@ -67,26 +63,10 @@
             padding: 5px 10px;
         }
 
-        .sab-item1 {
-            position: relative;
-        }
-
-        .sab-item2 {
-            position: relative;
-        }
-
         .sab-list1 {
             position: absolute;
             left: 82.68px;
             top: 0;
-            display: none;
-        }
-
-        .sab-item1:hover .sab-list1 {
-            display: block;
-        }
-
-        .sab-item2:hover .sab-list1 {
             display: none;
         }
 
@@ -109,16 +89,21 @@
             display: none;
         }
 
-        .sab-item2:hover .sab-list11 {
+        .sab-item0 {
+            position: relative;
+        }
+
+        .sab-item0:hover .sab-list1 {
             display: block;
         }
 
-        .sab-item1:hover .sab-link {
-            background-color: blue;
+        .sab-item0:hover .sab-list11 {
+            display: block;
         }
 
-        .sab-item2:hover .sab-link {
+        .sab-item0:hover .sab-link {
             background-color: blue;
+        }
     </style>
 
 </head>
@@ -129,7 +114,7 @@
             <li class="item"><a href="" class="link">HOME</a></li>
             <li class="item"><a href="" class="link">PRODUCTS</a>
                 <ul class="sab-list">
-                    <li class="sab-item1"><a href="" class="sab-link">PRODUCT1</a>
+                    <li class="sab-item0"><a href="" class="sab-link">PRODUCT1</a>
                         <ul class="sab-list1">
                             <li class="sab-item1">
                                 <a href="#" class="sab-link1">SUB ITEM1</a>
@@ -139,7 +124,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sab-item2"><a href="" class="sab-link">PRODUCT2</a>
+                    <li class="sab-item0"><a href="" class="sab-link">PRODUCT2</a>
                         <ul class="sab-list11">
                             <li class="sab-item11">
                                 <a href="#" class="sab-link11">SUB ITEM3</a>
